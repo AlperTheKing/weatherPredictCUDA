@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+
+# Ignore NetCDF and Zarr data files
+*.nc
+*.zarr

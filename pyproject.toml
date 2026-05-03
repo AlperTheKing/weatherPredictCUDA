@@ -1,0 +1,91 @@
+[build-system]
+requires = ["uv_build>=0.8.17,<0.9.0"]
+build-backend = "uv_build"
+
+[project]
+name = "keisler-2022"
+version = "0.1.0"
+description = "Code to run the ML weather model from Keisler 2022, 'Forecasting Global Weather with Graph Neural Networks'"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "zarr",
+    "jax>=0.4.0",
+    "dm-haiku",
+    "jraph",
+    "h3>=3.7.6,<4.0.0",
+    "xarray",
+    "dask",
+    "fsspec",
+    "gcsfs",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+keisler_2022 = ["data/*"]
+
+[project.optional-dependencies]
+cuda12 = [
+    "jax[cuda12]>=0.4.0",
+]
+scripts = [
+    "matplotlib",
+    "cartopy",
+]
+opendata = [
+    "cfgrib",
+    "eccodeslib",
+    "s3fs",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff==0.13.0",
+    "pre-commit>=3.0",
+    "ty",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E203", "E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+markers = [
+    "slow: marks tests as slow (deselect with -m \"not slow\")",
+    "network: marks tests that require network access (may be flaky)",
+]
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+]
+
+[tool.ty.environment]
+python-version = "3.10"
+
+[tool.ty.rules]
+# Suppress errors from jraph's overly broad GraphsTuple union types
+# (Array | Iterable | Mapping | None). The code is correct at runtime.
+invalid-assignment = "ignore"
+not-subscriptable = "ignore"
+invalid-argument-type = "ignore"
