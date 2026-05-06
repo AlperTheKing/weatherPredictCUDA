@@ -1,0 +1,31 @@
+{
+  "benchmark": "cuda_sensitivity",
+  "device": {
+    "jax_default_backend": "gpu",
+    "jax_devices": [
+      {
+        "device_kind": "NVIDIA GeForce RTX 5090",
+        "id": 0,
+        "platform": "gpu",
+        "repr": "cuda:0"
+      }
+    ]
+  },
+  "gradient_seconds": 23.1761181600001,
+  "init_time": "2012-01-01T00:00:00",
+  "lead_hours": 72,
+  "load_initial_seconds": 175.96730663200003,
+  "prepare_seconds": 0.8362178680000625,
+  "target": {
+    "channel": 23,
+    "label": "T850",
+    "latitude": 41.0,
+    "level_hpa": 850,
+    "longitude": 29.0,
+    "node": 17669,
+    "variable": "temperature"
+  },
+  "target_initial_value_model_units": 272.8146667480469,
+  "total_seconds": 215.807185345,
+  "write_seconds": 14.963177902999973
+}

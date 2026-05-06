@@ -1,6 +1,13 @@
 __pycache__/
 .venv/
+.venv-wsl/
+.uv-cache/
+.uv-cache-wsl/
+.pytest_cache/
+.jax_cache/
 
 # Ignore NetCDF and Zarr data files
 *.nc
 *.zarr
+*.zarr/
+*.grib2

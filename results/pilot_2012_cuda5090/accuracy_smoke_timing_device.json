@@ -1,0 +1,30 @@
+{
+  "benchmark": "cuda_accuracy",
+  "device": {
+    "jax_default_backend": "gpu",
+    "jax_devices": [
+      {
+        "device_kind": "NVIDIA GeForce RTX 5090",
+        "id": 0,
+        "platform": "gpu",
+        "repr": "cuda:0"
+      }
+    ]
+  },
+  "init_times": [
+    "2012-01-01T00:00:00"
+  ],
+  "per_init": [
+    {
+      "forecast_jit_seconds": 11.894139001999974,
+      "init_time": "2012-01-01T00:00:00",
+      "load_initial_seconds": 595.576092405,
+      "metrics_seconds": 0.007677714999999807,
+      "truth_load_seconds": 534.23912018,
+      "write_seconds": 0.0010015129998919292
+    }
+  ],
+  "runner_setup_seconds": 0.39322258200000704,
+  "steps": 1,
+  "total_seconds": 1142.1120498819998
+}

@@ -3,6 +3,28 @@ This repo contains code to run the machine learning weather model described in [
 
 The model uses a three-stage graph neural network: an **Encoder** maps ERA5 lat/lon fields onto an H3 hexagonal mesh, a **Processor** runs 9 rounds of message passing on the mesh, and a **Decoder** maps back to lat/lon to produce a 6-hour forecast update. Autoregressive rollout produces multi-day forecasts.
 
+## weatherPredictCUDA Additions
+
+This fork adds RTX 5090 CUDA benchmark tooling while preserving the upstream
+model, license, and examples. The CUDA workflow is documented in
+[`docs/cuda_rtx5090.md`](docs/cuda_rtx5090.md).
+
+Quick WSL2 commands:
+
+```bash
+uv sync --extra cuda13 --extra scripts
+uv run python -c "import jax; print(jax.default_backend(), jax.devices())"
+uv run scripts/04_cuda_accuracy_benchmark.py
+uv run scripts/05_cuda_sensitivity_benchmark.py --jax-cache .jax_cache
+```
+
+The accuracy pilot writes ERA5 RMSE/MAE/bias/skill metrics for four 2012
+10-day forecasts to `results/pilot_2012_cuda5090/`. The sensitivity pilot
+computes Istanbul T850 +72h gradients and writes CSV summaries plus maps.
+This machine completed the sensitivity benchmark; the full accuracy pilot hit
+the ERA5 truth-load bottleneck documented in
+`results/pilot_2012_cuda5090/accuracy_attempt_report.md`.
+
 ## Installation
 
 Prerequisites: Python 3.10+ and `uv` installed.
@@ -16,6 +38,9 @@ uv sync
 
 # GPU with CUDA 12
 uv sync --extra cuda12
+
+# GPU with CUDA 13, e.g. RTX 5090 in WSL2/Linux. Requires Python 3.11+.
+uv sync --extra cuda13
 
 # Optional: run tests
 uv run pytest
