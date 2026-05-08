@@ -19,6 +19,9 @@ REQUIRED_VARS = (
 )
 REQUIRED_LEVELS = (50, 100, 150, 200, 250, 300, 400, 500, 600, 700, 850, 925, 1000)
 GRAVITY = 9.80665  # m/s^2
+ARCO_ERA5_ZARR_URL = (
+    "gs://gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3"
+)
 
 
 def load_arco_era5(time_use: pd.Timestamp | str, *, cache: bool = False) -> xr.Dataset:
@@ -63,6 +66,49 @@ def load_arco_era5(time_use: pd.Timestamp | str, *, cache: bool = False) -> xr.D
         latitude=np.arange(90, -90.1, -1.0), longitude=np.arange(0, 360, 1.0)
     )
 
+    ds = ds.astype(np.float32)
+
+    if cache:
+        ds.to_netcdf(savename)
+
+    return ds
+
+
+def load_arco_era5_exact_1deg(
+    time_use: pd.Timestamp | str,
+    *,
+    cache: bool = False,
+) -> xr.Dataset:
+    """
+    Load ERA5 fields from Google ARCO by exact 1-degree subsampling.
+
+    The Keisler model uses a 1.0-degree grid whose points are an exact subset of
+    the ARCO 0.25-degree grid. This loader avoids interpolation and is useful
+    for repeated backtests where ARCO access, not inference, is the bottleneck.
+    """
+    time_use = pd.Timestamp(time_use)
+    savename = f"/tmp/era5_exact_1deg_{time_use.strftime('%Y%m%d_%H%M%S')}.nc"
+    if cache and os.path.exists(savename):
+        return xr.open_dataset(savename)
+
+    ds = xr.open_zarr(ARCO_ERA5_ZARR_URL, chunks=None, storage_options={"token": "anon"})
+    ds = ds.sel(
+        time=slice(ds.attrs["valid_time_start"], ds.attrs["valid_time_stop_era5t"])
+    )
+
+    lat_1deg = np.arange(90, -90.1, -1.0)
+    lon_1deg = np.arange(0, 360, 1.0)
+
+    ds = ds[list(REQUIRED_VARS)]
+    ds = ds.sel(level=list(REQUIRED_LEVELS))
+    ds = ds.sel(
+        time=[time_use],
+        latitude=lat_1deg,
+        longitude=lon_1deg,
+        method="nearest",
+    )
+    ds = ds.assign_coords(latitude=lat_1deg, longitude=lon_1deg)
+    ds = ds.transpose("time", "level", "latitude", "longitude")
     ds = ds.astype(np.float32)
 
     if cache:

@@ -5,6 +5,7 @@ __pycache__/
 .uv-cache-wsl/
 .pytest_cache/
 .jax_cache/
+results/ankara_2026_daily_backtest_smoke/
 
 # Ignore NetCDF and Zarr data files
 *.nc

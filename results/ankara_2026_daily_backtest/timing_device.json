@@ -1,0 +1,978 @@
+{
+  "benchmark": "ankara_rolling_backtest",
+  "completed_init_times": [
+    "2026-01-01T00:00:00",
+    "2026-01-02T00:00:00",
+    "2026-01-03T00:00:00",
+    "2026-01-04T00:00:00",
+    "2026-01-05T00:00:00",
+    "2026-01-06T00:00:00",
+    "2026-01-07T00:00:00",
+    "2026-01-08T00:00:00",
+    "2026-01-09T00:00:00",
+    "2026-01-10T00:00:00",
+    "2026-01-11T00:00:00",
+    "2026-01-12T00:00:00",
+    "2026-01-13T00:00:00",
+    "2026-01-14T00:00:00",
+    "2026-01-15T00:00:00",
+    "2026-01-16T00:00:00",
+    "2026-01-17T00:00:00",
+    "2026-01-18T00:00:00",
+    "2026-01-19T00:00:00",
+    "2026-01-20T00:00:00",
+    "2026-01-21T00:00:00",
+    "2026-01-22T00:00:00",
+    "2026-01-23T00:00:00",
+    "2026-01-24T00:00:00",
+    "2026-01-25T00:00:00",
+    "2026-01-26T00:00:00",
+    "2026-01-27T00:00:00",
+    "2026-01-28T00:00:00",
+    "2026-01-29T00:00:00",
+    "2026-01-30T00:00:00",
+    "2026-01-31T00:00:00",
+    "2026-02-01T00:00:00",
+    "2026-02-02T00:00:00",
+    "2026-02-03T00:00:00",
+    "2026-02-04T00:00:00",
+    "2026-02-05T00:00:00",
+    "2026-02-06T00:00:00",
+    "2026-02-07T00:00:00",
+    "2026-02-08T00:00:00",
+    "2026-02-09T00:00:00",
+    "2026-02-10T00:00:00",
+    "2026-02-11T00:00:00",
+    "2026-02-12T00:00:00",
+    "2026-02-13T00:00:00",
+    "2026-02-14T00:00:00",
+    "2026-02-15T00:00:00",
+    "2026-02-16T00:00:00",
+    "2026-02-17T00:00:00",
+    "2026-02-18T00:00:00",
+    "2026-02-19T00:00:00",
+    "2026-02-20T00:00:00",
+    "2026-02-21T00:00:00",
+    "2026-02-22T00:00:00",
+    "2026-02-23T00:00:00",
+    "2026-02-24T00:00:00",
+    "2026-02-25T00:00:00",
+    "2026-02-26T00:00:00",
+    "2026-02-27T00:00:00",
+    "2026-02-28T00:00:00",
+    "2026-03-01T00:00:00",
+    "2026-03-02T00:00:00",
+    "2026-03-03T00:00:00",
+    "2026-03-04T00:00:00",
+    "2026-03-05T00:00:00",
+    "2026-03-06T00:00:00",
+    "2026-03-07T00:00:00",
+    "2026-03-08T00:00:00",
+    "2026-03-09T00:00:00",
+    "2026-03-10T00:00:00",
+    "2026-03-11T00:00:00",
+    "2026-03-12T00:00:00",
+    "2026-03-13T00:00:00",
+    "2026-03-14T00:00:00",
+    "2026-03-15T00:00:00",
+    "2026-03-16T00:00:00",
+    "2026-03-17T00:00:00",
+    "2026-03-18T00:00:00",
+    "2026-03-19T00:00:00",
+    "2026-03-20T00:00:00",
+    "2026-03-21T00:00:00",
+    "2026-03-22T00:00:00",
+    "2026-03-23T00:00:00",
+    "2026-03-24T00:00:00",
+    "2026-03-25T00:00:00",
+    "2026-03-26T00:00:00",
+    "2026-03-27T00:00:00",
+    "2026-03-28T00:00:00",
+    "2026-03-29T00:00:00",
+    "2026-03-30T00:00:00",
+    "2026-03-31T00:00:00",
+    "2026-04-01T00:00:00",
+    "2026-04-02T00:00:00",
+    "2026-04-03T00:00:00",
+    "2026-04-04T00:00:00",
+    "2026-04-05T00:00:00",
+    "2026-04-06T00:00:00",
+    "2026-04-07T00:00:00",
+    "2026-04-08T00:00:00",
+    "2026-04-09T00:00:00",
+    "2026-04-10T00:00:00",
+    "2026-04-11T00:00:00",
+    "2026-04-12T00:00:00",
+    "2026-04-13T00:00:00",
+    "2026-04-14T00:00:00",
+    "2026-04-15T00:00:00",
+    "2026-04-16T00:00:00",
+    "2026-04-17T00:00:00",
+    "2026-04-18T00:00:00",
+    "2026-04-19T00:00:00",
+    "2026-04-20T00:00:00",
+    "2026-04-21T00:00:00",
+    "2026-04-22T00:00:00",
+    "2026-04-23T00:00:00",
+    "2026-04-24T00:00:00",
+    "2026-04-25T00:00:00",
+    "2026-04-26T00:00:00",
+    "2026-04-27T00:00:00",
+    "2026-04-28T00:00:00",
+    "2026-04-29T00:00:00"
+  ],
+  "device": {
+    "jax_default_backend": "gpu",
+    "jax_devices": [
+      {
+        "device_kind": "NVIDIA GeForce RTX 5090",
+        "id": 0,
+        "platform": "gpu",
+        "repr": "cuda:0"
+      }
+    ]
+  },
+  "end_truth_date": "2026-04-30",
+  "grid_location": {
+    "latitude": 40.0,
+    "longitude": 33.0
+  },
+  "lead_hours": 24,
+  "n_requested_init_times": 119,
+  "per_init": [
+    {
+      "forecast_seconds": 4.111415940998995,
+      "init_time": "2026-01-02T00:00:00",
+      "load_initial_seconds": 66.56862882999849,
+      "truth_point_load_seconds": 41.06702906599821,
+      "valid_time": "2026-01-03T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.742404272998101,
+      "init_time": "2026-01-03T00:00:00",
+      "load_initial_seconds": 68.17216933599775,
+      "truth_point_load_seconds": 41.42078776499693,
+      "valid_time": "2026-01-04T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.812325208000402,
+      "init_time": "2026-01-04T00:00:00",
+      "load_initial_seconds": 70.51801906699984,
+      "truth_point_load_seconds": 41.776350166001066,
+      "valid_time": "2026-01-05T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.820128849001776,
+      "init_time": "2026-01-05T00:00:00",
+      "load_initial_seconds": 71.86623514999883,
+      "truth_point_load_seconds": 47.24021364700093,
+      "valid_time": "2026-01-06T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.875016682999558,
+      "init_time": "2026-01-06T00:00:00",
+      "load_initial_seconds": 71.87321184899702,
+      "truth_point_load_seconds": 42.628116772000794,
+      "valid_time": "2026-01-07T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7946153720004077,
+      "init_time": "2026-01-07T00:00:00",
+      "load_initial_seconds": 68.99323976400046,
+      "truth_point_load_seconds": 46.182838235003146,
+      "valid_time": "2026-01-08T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.938041962999705,
+      "init_time": "2026-01-08T00:00:00",
+      "load_initial_seconds": 73.0531786520005,
+      "truth_point_load_seconds": 48.04083783900205,
+      "valid_time": "2026-01-09T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7763729239995882,
+      "init_time": "2026-01-09T00:00:00",
+      "load_initial_seconds": 69.76881405300082,
+      "truth_point_load_seconds": 44.96319655000116,
+      "valid_time": "2026-01-10T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.752649965001183,
+      "init_time": "2026-01-10T00:00:00",
+      "load_initial_seconds": 69.81654139000239,
+      "truth_point_load_seconds": 44.66575954699874,
+      "valid_time": "2026-01-11T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8601661620014056,
+      "init_time": "2026-01-11T00:00:00",
+      "load_initial_seconds": 74.44840312900124,
+      "truth_point_load_seconds": 49.640541645996564,
+      "valid_time": "2026-01-12T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.720552109996788,
+      "init_time": "2026-01-12T00:00:00",
+      "load_initial_seconds": 69.70010632699996,
+      "truth_point_load_seconds": 45.021348079000745,
+      "valid_time": "2026-01-13T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.787171436997596,
+      "init_time": "2026-01-13T00:00:00",
+      "load_initial_seconds": 82.694698659001,
+      "truth_point_load_seconds": 49.08106124099504,
+      "valid_time": "2026-01-14T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7889040959998965,
+      "init_time": "2026-01-14T00:00:00",
+      "load_initial_seconds": 87.44261514800019,
+      "truth_point_load_seconds": 60.507236363999255,
+      "valid_time": "2026-01-15T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.722124959997018,
+      "init_time": "2026-01-15T00:00:00",
+      "load_initial_seconds": 100.41423302899784,
+      "truth_point_load_seconds": 59.24819314300112,
+      "valid_time": "2026-01-16T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.809264623996569,
+      "init_time": "2026-01-16T00:00:00",
+      "load_initial_seconds": 102.21492976599984,
+      "truth_point_load_seconds": 54.158535305999976,
+      "valid_time": "2026-01-17T00:00:00"
+    },
+    {
+      "forecast_seconds": 3.010866538003029,
+      "init_time": "2026-01-17T00:00:00",
+      "load_initial_seconds": 81.72941187999822,
+      "truth_point_load_seconds": 45.66936562599585,
+      "valid_time": "2026-01-18T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9037792879971676,
+      "init_time": "2026-01-18T00:00:00",
+      "load_initial_seconds": 118.79421571400599,
+      "truth_point_load_seconds": 149.2412081020011,
+      "valid_time": "2026-01-19T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.782816589999129,
+      "init_time": "2026-01-19T00:00:00",
+      "load_initial_seconds": 84.55494501400244,
+      "truth_point_load_seconds": 50.06838995600265,
+      "valid_time": "2026-01-20T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7264632360020187,
+      "init_time": "2026-01-20T00:00:00",
+      "load_initial_seconds": 86.47565698499966,
+      "truth_point_load_seconds": 56.73546075299964,
+      "valid_time": "2026-01-21T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7526599539996823,
+      "init_time": "2026-01-21T00:00:00",
+      "load_initial_seconds": 95.97709007799858,
+      "truth_point_load_seconds": 68.56261719600298,
+      "valid_time": "2026-01-22T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.775050680997083,
+      "init_time": "2026-01-22T00:00:00",
+      "load_initial_seconds": 112.4097557730056,
+      "truth_point_load_seconds": 59.19508383000357,
+      "valid_time": "2026-01-23T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.843895829995745,
+      "init_time": "2026-01-23T00:00:00",
+      "load_initial_seconds": 95.82824472300126,
+      "truth_point_load_seconds": 57.77652374999889,
+      "valid_time": "2026-01-24T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.868610297999112,
+      "init_time": "2026-01-24T00:00:00",
+      "load_initial_seconds": 82.75957784600178,
+      "truth_point_load_seconds": 51.77066353400005,
+      "valid_time": "2026-01-25T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.6986410960016656,
+      "init_time": "2026-01-25T00:00:00",
+      "load_initial_seconds": 93.03619503200025,
+      "truth_point_load_seconds": 51.3848005539985,
+      "valid_time": "2026-01-26T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.796360492997337,
+      "init_time": "2026-01-26T00:00:00",
+      "load_initial_seconds": 86.47964919699734,
+      "truth_point_load_seconds": 49.58798332900187,
+      "valid_time": "2026-01-27T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.851734520001628,
+      "init_time": "2026-01-27T00:00:00",
+      "load_initial_seconds": 82.1640107879939,
+      "truth_point_load_seconds": 64.45985688299697,
+      "valid_time": "2026-01-28T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8331873310016817,
+      "init_time": "2026-01-28T00:00:00",
+      "load_initial_seconds": 247.4322341310035,
+      "truth_point_load_seconds": 180.91210710199812,
+      "valid_time": "2026-01-29T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.847920376996626,
+      "init_time": "2026-01-29T00:00:00",
+      "load_initial_seconds": 268.42490793100296,
+      "truth_point_load_seconds": 148.8549274199977,
+      "valid_time": "2026-01-30T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8955903479945846,
+      "init_time": "2026-01-30T00:00:00",
+      "load_initial_seconds": 205.35350414999994,
+      "truth_point_load_seconds": 177.78225844199915,
+      "valid_time": "2026-01-31T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.907642420999764,
+      "init_time": "2026-01-31T00:00:00",
+      "load_initial_seconds": 365.18191873799515,
+      "truth_point_load_seconds": 358.31701483399956,
+      "valid_time": "2026-02-01T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9248972560017137,
+      "init_time": "2026-02-01T00:00:00",
+      "load_initial_seconds": 139.07762842200464,
+      "truth_point_load_seconds": 166.0067786790023,
+      "valid_time": "2026-02-02T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8121085699967807,
+      "init_time": "2026-02-02T00:00:00",
+      "load_initial_seconds": 291.1957789770022,
+      "truth_point_load_seconds": 70.08388691499567,
+      "valid_time": "2026-02-03T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8025330750024295,
+      "init_time": "2026-02-03T00:00:00",
+      "load_initial_seconds": 137.49086954600352,
+      "truth_point_load_seconds": 66.0872718449973,
+      "valid_time": "2026-02-04T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9261091939988546,
+      "init_time": "2026-02-04T00:00:00",
+      "load_initial_seconds": 102.11483496400615,
+      "truth_point_load_seconds": 63.381984487998125,
+      "valid_time": "2026-02-05T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.880512556002941,
+      "init_time": "2026-02-05T00:00:00",
+      "load_initial_seconds": 96.09154645999661,
+      "truth_point_load_seconds": 62.55231475500477,
+      "valid_time": "2026-02-06T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.6740179999978864,
+      "init_time": "2026-02-06T00:00:00",
+      "load_initial_seconds": 109.08924154499982,
+      "truth_point_load_seconds": 74.89302917200257,
+      "valid_time": "2026-02-07T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8175531640008558,
+      "init_time": "2026-02-07T00:00:00",
+      "load_initial_seconds": 128.0613721069967,
+      "truth_point_load_seconds": 69.3500703979953,
+      "valid_time": "2026-02-08T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.804724759000237,
+      "init_time": "2026-02-08T00:00:00",
+      "load_initial_seconds": 176.55050953899627,
+      "truth_point_load_seconds": 138.87124536000192,
+      "valid_time": "2026-02-09T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.688305211995612,
+      "init_time": "2026-02-09T00:00:00",
+      "load_initial_seconds": 212.21060233000026,
+      "truth_point_load_seconds": 171.26638561700383,
+      "valid_time": "2026-02-10T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.873210685997037,
+      "init_time": "2026-02-10T00:00:00",
+      "load_initial_seconds": 306.2823212939984,
+      "truth_point_load_seconds": 181.94365980000293,
+      "valid_time": "2026-02-11T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.955036437997478,
+      "init_time": "2026-02-11T00:00:00",
+      "load_initial_seconds": 1398.5350303419982,
+      "truth_point_load_seconds": 561.2153388730003,
+      "valid_time": "2026-02-12T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.864056373000494,
+      "init_time": "2026-02-12T00:00:00",
+      "load_initial_seconds": 961.3319587519945,
+      "truth_point_load_seconds": 899.905343776998,
+      "valid_time": "2026-02-13T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.6971615830043447,
+      "init_time": "2026-02-13T00:00:00",
+      "load_initial_seconds": 1025.1838927930003,
+      "truth_point_load_seconds": 390.74241418800375,
+      "valid_time": "2026-02-14T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7640757260014652,
+      "init_time": "2026-02-14T00:00:00",
+      "load_initial_seconds": 626.7830080650019,
+      "truth_point_load_seconds": 422.50200107000273,
+      "valid_time": "2026-02-15T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.743209483996907,
+      "init_time": "2026-02-15T00:00:00",
+      "load_initial_seconds": 662.6080392500007,
+      "truth_point_load_seconds": 548.0298046649987,
+      "valid_time": "2026-02-16T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.894045693996304,
+      "init_time": "2026-02-16T00:00:00",
+      "load_initial_seconds": 647.8241390129988,
+      "truth_point_load_seconds": 442.462218202003,
+      "valid_time": "2026-02-17T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8416452150049736,
+      "init_time": "2026-02-17T00:00:00",
+      "load_initial_seconds": 989.8294885330033,
+      "truth_point_load_seconds": 597.9145337570008,
+      "valid_time": "2026-02-18T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.746298067999305,
+      "init_time": "2026-02-18T00:00:00",
+      "load_initial_seconds": 909.4537276880001,
+      "truth_point_load_seconds": 466.3388752410028,
+      "valid_time": "2026-02-19T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8549014439995517,
+      "init_time": "2026-02-19T00:00:00",
+      "load_initial_seconds": 912.1569529060071,
+      "truth_point_load_seconds": 547.1682196420006,
+      "valid_time": "2026-02-20T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8608331220020773,
+      "init_time": "2026-02-20T00:00:00",
+      "load_initial_seconds": 879.426682244004,
+      "truth_point_load_seconds": 514.8773304069982,
+      "valid_time": "2026-02-21T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.811083246000635,
+      "init_time": "2026-02-21T00:00:00",
+      "load_initial_seconds": 1117.0379701269994,
+      "truth_point_load_seconds": 448.03761510700133,
+      "valid_time": "2026-02-22T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8766541389995837,
+      "init_time": "2026-02-22T00:00:00",
+      "load_initial_seconds": 958.6995618229994,
+      "truth_point_load_seconds": 696.4271651239978,
+      "valid_time": "2026-02-23T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.848830723996798,
+      "init_time": "2026-02-23T00:00:00",
+      "load_initial_seconds": 949.5924459140006,
+      "truth_point_load_seconds": 833.9846321619989,
+      "valid_time": "2026-02-24T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8484575649999897,
+      "init_time": "2026-02-24T00:00:00",
+      "load_initial_seconds": 2690.1237491980064,
+      "truth_point_load_seconds": 994.060905499995,
+      "valid_time": "2026-02-25T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8442648429991095,
+      "init_time": "2026-02-25T00:00:00",
+      "load_initial_seconds": 1956.7440158519967,
+      "truth_point_load_seconds": 1771.6072490189981,
+      "valid_time": "2026-02-26T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.799798459003796,
+      "init_time": "2026-02-26T00:00:00",
+      "load_initial_seconds": 1032.4244110319996,
+      "truth_point_load_seconds": 589.1947155429953,
+      "valid_time": "2026-02-27T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.87227742500545,
+      "init_time": "2026-02-27T00:00:00",
+      "load_initial_seconds": 1638.7734456530015,
+      "truth_point_load_seconds": 1033.5212058480101,
+      "valid_time": "2026-02-28T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9353610620019026,
+      "init_time": "2026-02-28T00:00:00",
+      "load_initial_seconds": 1619.6708936310024,
+      "truth_point_load_seconds": 889.9267876960075,
+      "valid_time": "2026-03-01T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.816897124008392,
+      "init_time": "2026-03-01T00:00:00",
+      "load_initial_seconds": 1347.9966804630094,
+      "truth_point_load_seconds": 793.9857335029956,
+      "valid_time": "2026-03-02T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9375099550088635,
+      "init_time": "2026-03-02T00:00:00",
+      "load_initial_seconds": 1413.217490156996,
+      "truth_point_load_seconds": 912.0897388689918,
+      "valid_time": "2026-03-03T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8427598400012357,
+      "init_time": "2026-03-03T00:00:00",
+      "load_initial_seconds": 859.8517970230023,
+      "truth_point_load_seconds": 912.8233745150064,
+      "valid_time": "2026-03-04T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8372612749953987,
+      "init_time": "2026-03-04T00:00:00",
+      "load_initial_seconds": 1486.2401231950062,
+      "truth_point_load_seconds": 611.7733180450014,
+      "valid_time": "2026-03-05T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8712738269969122,
+      "init_time": "2026-03-05T00:00:00",
+      "load_initial_seconds": 989.6054789479967,
+      "truth_point_load_seconds": 1310.6498894599936,
+      "valid_time": "2026-03-06T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8511226200062083,
+      "init_time": "2026-03-06T00:00:00",
+      "load_initial_seconds": 1632.4953038950043,
+      "truth_point_load_seconds": 847.9820288339979,
+      "valid_time": "2026-03-07T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.974984925996978,
+      "init_time": "2026-03-07T00:00:00",
+      "load_initial_seconds": 1322.2033719519968,
+      "truth_point_load_seconds": 586.0913840800058,
+      "valid_time": "2026-03-08T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7974289559933823,
+      "init_time": "2026-03-08T00:00:00",
+      "load_initial_seconds": 695.7525591020094,
+      "truth_point_load_seconds": 655.0915932470089,
+      "valid_time": "2026-03-09T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7771603309956845,
+      "init_time": "2026-03-09T00:00:00",
+      "load_initial_seconds": 756.931631200001,
+      "truth_point_load_seconds": 562.3316297569982,
+      "valid_time": "2026-03-10T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8073403970047366,
+      "init_time": "2026-03-10T00:00:00",
+      "load_initial_seconds": 765.7108473300032,
+      "truth_point_load_seconds": 770.9787375730084,
+      "valid_time": "2026-03-11T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8146620510087814,
+      "init_time": "2026-03-11T00:00:00",
+      "load_initial_seconds": 1079.290166598992,
+      "truth_point_load_seconds": 753.0474033149949,
+      "valid_time": "2026-03-12T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.742950779997045,
+      "init_time": "2026-03-12T00:00:00",
+      "load_initial_seconds": 1029.289698173001,
+      "truth_point_load_seconds": 726.5567500299949,
+      "valid_time": "2026-03-13T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7755510910064913,
+      "init_time": "2026-03-13T00:00:00",
+      "load_initial_seconds": 816.8998291159951,
+      "truth_point_load_seconds": 586.3353715919948,
+      "valid_time": "2026-03-14T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.6785340450005606,
+      "init_time": "2026-03-14T00:00:00",
+      "load_initial_seconds": 672.2372948179982,
+      "truth_point_load_seconds": 671.4740483789938,
+      "valid_time": "2026-03-15T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7426982250035508,
+      "init_time": "2026-03-15T00:00:00",
+      "load_initial_seconds": 1216.5749433929886,
+      "truth_point_load_seconds": 365.9365420410031,
+      "valid_time": "2026-03-16T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.843909174000146,
+      "init_time": "2026-03-16T00:00:00",
+      "load_initial_seconds": 572.9854054580064,
+      "truth_point_load_seconds": 317.5801197959954,
+      "valid_time": "2026-03-17T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9418980789923808,
+      "init_time": "2026-03-17T00:00:00",
+      "load_initial_seconds": 566.634111737003,
+      "truth_point_load_seconds": 298.1867637789983,
+      "valid_time": "2026-03-18T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.795070690001012,
+      "init_time": "2026-03-18T00:00:00",
+      "load_initial_seconds": 530.9080194330018,
+      "truth_point_load_seconds": 334.9397617499926,
+      "valid_time": "2026-03-19T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.847218775001238,
+      "init_time": "2026-03-19T00:00:00",
+      "load_initial_seconds": 485.8610192460037,
+      "truth_point_load_seconds": 300.7421699000115,
+      "valid_time": "2026-03-20T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7762444649997633,
+      "init_time": "2026-03-20T00:00:00",
+      "load_initial_seconds": 375.73072346999834,
+      "truth_point_load_seconds": 366.7937750280107,
+      "valid_time": "2026-03-21T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8342918420094065,
+      "init_time": "2026-03-21T00:00:00",
+      "load_initial_seconds": 469.4414409170131,
+      "truth_point_load_seconds": 262.1613798870094,
+      "valid_time": "2026-03-22T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.714668909989996,
+      "init_time": "2026-03-22T00:00:00",
+      "load_initial_seconds": 395.92048326000804,
+      "truth_point_load_seconds": 264.5491199209937,
+      "valid_time": "2026-03-23T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9191590729897143,
+      "init_time": "2026-03-23T00:00:00",
+      "load_initial_seconds": 484.6965458430059,
+      "truth_point_load_seconds": 319.3194819269993,
+      "valid_time": "2026-03-24T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8156825969927013,
+      "init_time": "2026-03-24T00:00:00",
+      "load_initial_seconds": 424.3251383110037,
+      "truth_point_load_seconds": 321.54877511100494,
+      "valid_time": "2026-03-25T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7988612280023517,
+      "init_time": "2026-03-25T00:00:00",
+      "load_initial_seconds": 364.999092070997,
+      "truth_point_load_seconds": 208.63600820000283,
+      "valid_time": "2026-03-26T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7699861009896267,
+      "init_time": "2026-03-26T00:00:00",
+      "load_initial_seconds": 456.5352975709975,
+      "truth_point_load_seconds": 308.1760457360069,
+      "valid_time": "2026-03-27T00:00:00"
+    },
+    {
+      "forecast_seconds": 3.021028101007687,
+      "init_time": "2026-03-27T00:00:00",
+      "load_initial_seconds": 420.7205190999957,
+      "truth_point_load_seconds": 206.46817103298963,
+      "valid_time": "2026-03-28T00:00:00"
+    },
+    {
+      "forecast_seconds": 3.0593843539973022,
+      "init_time": "2026-03-28T00:00:00",
+      "load_initial_seconds": 458.2596236579993,
+      "truth_point_load_seconds": 260.6055198510003,
+      "valid_time": "2026-03-29T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8376634449959965,
+      "init_time": "2026-03-29T00:00:00",
+      "load_initial_seconds": 373.0927638330031,
+      "truth_point_load_seconds": 221.24519944500935,
+      "valid_time": "2026-03-30T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.860521852999227,
+      "init_time": "2026-03-30T00:00:00",
+      "load_initial_seconds": 327.17834202200174,
+      "truth_point_load_seconds": 230.53176761700888,
+      "valid_time": "2026-03-31T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7634202059998643,
+      "init_time": "2026-03-31T00:00:00",
+      "load_initial_seconds": 567.4678213799925,
+      "truth_point_load_seconds": 261.5433849330002,
+      "valid_time": "2026-04-01T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8851488899963442,
+      "init_time": "2026-04-01T00:00:00",
+      "load_initial_seconds": 536.6279054179904,
+      "truth_point_load_seconds": 239.09378470299998,
+      "valid_time": "2026-04-02T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9023024780035485,
+      "init_time": "2026-04-02T00:00:00",
+      "load_initial_seconds": 409.2064696409943,
+      "truth_point_load_seconds": 235.1411353220028,
+      "valid_time": "2026-04-03T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.792069958013599,
+      "init_time": "2026-04-03T00:00:00",
+      "load_initial_seconds": 473.798839451003,
+      "truth_point_load_seconds": 223.90037413299433,
+      "valid_time": "2026-04-04T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.865463804002502,
+      "init_time": "2026-04-04T00:00:00",
+      "load_initial_seconds": 400.6013767280092,
+      "truth_point_load_seconds": 320.27916133598774,
+      "valid_time": "2026-04-05T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.925813758003642,
+      "init_time": "2026-04-05T00:00:00",
+      "load_initial_seconds": 500.57400925600086,
+      "truth_point_load_seconds": 378.2362555209984,
+      "valid_time": "2026-04-06T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.851804930003709,
+      "init_time": "2026-04-06T00:00:00",
+      "load_initial_seconds": 1485.9626268819993,
+      "truth_point_load_seconds": 283.6708991209889,
+      "valid_time": "2026-04-07T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9093374950025463,
+      "init_time": "2026-04-07T00:00:00",
+      "load_initial_seconds": 458.69707039700006,
+      "truth_point_load_seconds": 314.6539205649897,
+      "valid_time": "2026-04-08T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7729972100059967,
+      "init_time": "2026-04-08T00:00:00",
+      "load_initial_seconds": 331.8725863860018,
+      "truth_point_load_seconds": 400.6082968059927,
+      "valid_time": "2026-04-09T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.924362542005838,
+      "init_time": "2026-04-09T00:00:00",
+      "load_initial_seconds": 443.59445839899126,
+      "truth_point_load_seconds": 281.3136535270023,
+      "valid_time": "2026-04-10T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7478663539950503,
+      "init_time": "2026-04-10T00:00:00",
+      "load_initial_seconds": 535.2455122840038,
+      "truth_point_load_seconds": 447.2653467869968,
+      "valid_time": "2026-04-11T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.999892798005021,
+      "init_time": "2026-04-11T00:00:00",
+      "load_initial_seconds": 531.0006908609939,
+      "truth_point_load_seconds": 382.5887387679977,
+      "valid_time": "2026-04-12T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9865819480037317,
+      "init_time": "2026-04-12T00:00:00",
+      "load_initial_seconds": 380.76474502500787,
+      "truth_point_load_seconds": 303.86893609000253,
+      "valid_time": "2026-04-13T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.826050176008721,
+      "init_time": "2026-04-13T00:00:00",
+      "load_initial_seconds": 841.0939703240001,
+      "truth_point_load_seconds": 747.5913574419974,
+      "valid_time": "2026-04-14T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7696862919983687,
+      "init_time": "2026-04-14T00:00:00",
+      "load_initial_seconds": 712.8216828110017,
+      "truth_point_load_seconds": 482.2688621739944,
+      "valid_time": "2026-04-15T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9504780739953276,
+      "init_time": "2026-04-15T00:00:00",
+      "load_initial_seconds": 639.1613161179994,
+      "truth_point_load_seconds": 447.571053503998,
+      "valid_time": "2026-04-16T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7706146470009116,
+      "init_time": "2026-04-16T00:00:00",
+      "load_initial_seconds": 753.9372560989868,
+      "truth_point_load_seconds": 421.12123129500833,
+      "valid_time": "2026-04-17T00:00:00"
+    },
+    {
+      "forecast_seconds": 3.0726280709932325,
+      "init_time": "2026-04-17T00:00:00",
+      "load_initial_seconds": 541.6943271199998,
+      "truth_point_load_seconds": 326.0355323449912,
+      "valid_time": "2026-04-18T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8588391810044413,
+      "init_time": "2026-04-18T00:00:00",
+      "load_initial_seconds": 683.3321538169985,
+      "truth_point_load_seconds": 486.8311040580011,
+      "valid_time": "2026-04-19T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9441910550085595,
+      "init_time": "2026-04-19T00:00:00",
+      "load_initial_seconds": 444.57739362599386,
+      "truth_point_load_seconds": 466.44122118499945,
+      "valid_time": "2026-04-20T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8234513940114994,
+      "init_time": "2026-04-20T00:00:00",
+      "load_initial_seconds": 661.3701849930076,
+      "truth_point_load_seconds": 461.39572657298413,
+      "valid_time": "2026-04-21T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.863938547001453,
+      "init_time": "2026-04-21T00:00:00",
+      "load_initial_seconds": 507.0947726079903,
+      "truth_point_load_seconds": 433.972321076988,
+      "valid_time": "2026-04-22T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8881032110075466,
+      "init_time": "2026-04-22T00:00:00",
+      "load_initial_seconds": 758.7103617590037,
+      "truth_point_load_seconds": 446.5022257529781,
+      "valid_time": "2026-04-23T00:00:00"
+    },
+    {
+      "forecast_seconds": 3.278180332010379,
+      "init_time": "2026-04-23T00:00:00",
+      "load_initial_seconds": 706.0350743099989,
+      "truth_point_load_seconds": 494.6983114100003,
+      "valid_time": "2026-04-24T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.9907744039956015,
+      "init_time": "2026-04-24T00:00:00",
+      "load_initial_seconds": 486.8979807780124,
+      "truth_point_load_seconds": 309.36594754699036,
+      "valid_time": "2026-04-25T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7988662739808206,
+      "init_time": "2026-04-25T00:00:00",
+      "load_initial_seconds": 641.8153999439965,
+      "truth_point_load_seconds": 392.670889970992,
+      "valid_time": "2026-04-26T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.758548101002816,
+      "init_time": "2026-04-26T00:00:00",
+      "load_initial_seconds": 590.6331551279873,
+      "truth_point_load_seconds": 426.09337536100065,
+      "valid_time": "2026-04-27T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.778652522014454,
+      "init_time": "2026-04-27T00:00:00",
+      "load_initial_seconds": 576.8028971890162,
+      "truth_point_load_seconds": 370.9403736590175,
+      "valid_time": "2026-04-28T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.8499942850030493,
+      "init_time": "2026-04-28T00:00:00",
+      "load_initial_seconds": 579.4184905700095,
+      "truth_point_load_seconds": 349.30502398102544,
+      "valid_time": "2026-04-29T00:00:00"
+    },
+    {
+      "forecast_seconds": 2.7508973669901025,
+      "init_time": "2026-04-29T00:00:00",
+      "load_initial_seconds": 466.45252931900905,
+      "truth_point_load_seconds": 354.82841451402055,
+      "valid_time": "2026-04-30T00:00:00"
+    }
+  ],
+  "requested_location": {
+    "latitude": 39.9334,
+    "longitude": 32.8597
+  },
+  "runner_setup_seconds": 0.3822638739984541,
+  "start_date": "2026-01-01",
+  "total_seconds": 109482.353589098,
+  "total_seconds_so_far": 109482.34195569501
+}
